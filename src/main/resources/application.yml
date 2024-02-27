@@ -1,0 +1,30 @@
+server:
+  port: 9999
+  servlet:
+    context-path: /
+# 配置数据库信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据库连接池
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.92.131:3306/teamsystem?useUnicode=true&amp&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+  # 其他文件放在哪里
+  mvc:
+    static-path-pattern: /images/**
+  web:
+    resources:
+      static-locations: file:D://images/
+  devtools:
+    restart:
+      enabled: true
+mybatis-plus:
+  type-aliases-package: com.yanzhen.model
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/yanzhen/mapper/*.xml
+
+

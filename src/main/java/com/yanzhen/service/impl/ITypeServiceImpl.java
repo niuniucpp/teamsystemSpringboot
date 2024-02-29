@@ -34,7 +34,7 @@ public class ITypeServiceImpl extends ServiceImpl<TypeMapper, TypeInfo> implemen
 
     @Override
     public int delete(Long id) {
-        return 0;
+        return baseMapper.deleteById(id);
     }
 
     @Override

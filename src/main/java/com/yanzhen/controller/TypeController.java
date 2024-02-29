@@ -67,4 +67,14 @@ public class TypeController {
         return R.fail("类型添加失败");
     }
 
+
+    @ApiOperation(value = "删除社团分类和介绍")
+    @RequestMapping(value = "/updateInfo")
+    public R update(@RequestBody TypeInfo typeInfo){
+        int num =typeService.updateData(typeInfo);
+        if (num>0){
+            return R.ok();
+        }
+        return R.fail("修改失败");
+    }
 }

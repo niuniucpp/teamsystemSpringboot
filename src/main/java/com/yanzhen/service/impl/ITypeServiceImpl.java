@@ -1,6 +1,5 @@
 package com.yanzhen.service.impl;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
@@ -14,7 +13,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- *
+ * @author NIUNIU
+ * @author NIUNIU
  */
 @Service
 public class ITypeServiceImpl extends ServiceImpl<TypeMapper, TypeInfo> implements ITypeService {

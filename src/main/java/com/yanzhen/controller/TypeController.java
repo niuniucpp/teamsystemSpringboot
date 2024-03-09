@@ -69,12 +69,12 @@ public class TypeController {
 
 
     @ApiOperation(value = "删除社团分类和介绍")
-    @RequestMapping(value = "/updateInfo")
-    public R update(@RequestBody TypeInfo typeInfo){
-        int num =typeService.updateData(typeInfo);
-        if (num>0){
+    @RequestMapping(value = "/deleteInfo")
+    public R delete(long id){
+        int num =typeService.delete(id);
+        if (num > 0){
             return R.ok();
         }
-        return R.fail("修改失败");
+        return R.fail("删除失败！！");
     }
 }

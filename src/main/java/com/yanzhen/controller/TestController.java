@@ -11,8 +11,8 @@ public class TestController {
      * 测试案例
      * 在页面上输出打印 一句话
      */
-    @RequestMapping("/testController")
-    public String testController(){
+    @RequestMapping("/hello")
+    public String hello(){
         return "正在使用springboot！！！";
     }
 }

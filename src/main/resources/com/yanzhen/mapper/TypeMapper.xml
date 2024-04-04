@@ -24,8 +24,4 @@
             </if>
         </where>
     </select>
-
-    <delete id="Bean_Column_List">
-        resuluType=""
-    </delete>
 </mapper>

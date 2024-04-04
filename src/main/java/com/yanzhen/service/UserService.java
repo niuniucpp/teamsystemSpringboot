@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.github.pagehelper.PageInfo;
 import com.yanzhen.model.UserInfo;
 
-public interface IUserService extends IService<UserInfo>{
+public interface UserService extends IService<UserInfo>{
 
     /**
      * 分页查询

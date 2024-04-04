@@ -5,16 +5,16 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yanzhen.mapper.UserMapper;
 import com.yanzhen.model.UserInfo;
-import com.yanzhen.service.IUserService;
+import com.yanzhen.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service("userService")
-public class IUserServiceImpl
+public class UserServiceImpl
         extends ServiceImpl<UserMapper,UserInfo>
-        implements IUserService {
+        implements UserService {
 
 
     @Autowired

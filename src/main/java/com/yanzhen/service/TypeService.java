@@ -10,7 +10,7 @@ import com.yanzhen.model.TypeInfo;
  * @author kappy
  * @since 2022-07-25
  */
-public interface ITypeService extends IService<TypeInfo> {
+public interface TypeService extends IService<TypeInfo> {
     /**
      * 查询社团分类和介绍数据
      * @param page 页码
